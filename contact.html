@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Appointment | BEAUTY PARLOUR</title>
+  <meta name="description" content="Book an appointment or get in touch with BEAUTY PARLOUR in Hyderabad. Easy appointment request form, salon hours, and contact details.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Demo Notice Banner -->
+  <aside class="demo-badge-banner" aria-label="Demo notice">
+    ✨ Welcome to the official <strong>BEAUTY PARLOUR</strong> website. Contact details and appointment requests are for demonstration purposes only.
+  </aside>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header" id="top">
+    <div class="container navbar">
+      <a href="index.html" class="logo" aria-label="BEAUTY PARLOUR Home">
+        <span class="logo-text">BEAUTY PARLOUR</span>
+        <span class="logo-subtext">Luxury Beauty & Wellness</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="hair-care.html" class="nav-link">Hair Care</a></li>
+          <li><a href="skin-care.html" class="nav-link">Skin Care</a></li>
+          <li><a href="bridal-makeup.html" class="nav-link">Bridal Makeup</a></li>
+          <li><a href="packages-gallery.html" class="nav-link">Packages & Gallery</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Book Appointment</a>
+        <button class="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1 class="page-banner-title">Contact & Appointment</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Contact</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="section-padding" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2.5rem;">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">We Look Forward to Welcoming You</h2>
+          <p class="section-description">
+            Reach out by phone, email, or complete our straightforward appointment request form below.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3.5rem;">
+          <!-- Card 1: Phone -->
+          <div class="feature-box">
+            <span class="feature-icon-lg">📞</span>
+            <h3>Call Us</h3>
+            <p style="font-weight: 600; color: var(--color-plum-deep); font-size: 1.1rem; margin-bottom: 0.25rem;">+91 90000 00000</p>
+            <p style="font-size: 0.82rem; color: var(--color-gray-subtle);">Demonstration phone line</p>
+          </div>
+
+          <!-- Card 2: Email -->
+          <div class="feature-box">
+            <span class="feature-icon-lg">✉️</span>
+            <h3>Email Enquiries</h3>
+            <p style="font-weight: 600; color: var(--color-plum-deep); font-size: 1.1rem; margin-bottom: 0.25rem;">demo@example.com</p>
+            <p style="font-size: 0.82rem; color: var(--color-gray-subtle);">Sample demonstration inbox</p>
+          </div>
+
+          <!-- Card 3: Address -->
+          <div class="feature-box">
+            <span class="feature-icon-lg">📍</span>
+            <h3>Parlour Address</h3>
+            <p style="font-weight: 600; color: var(--color-plum-deep); font-size: 1rem; margin-bottom: 0.25rem;">Main Road, Hyderabad</p>
+            <p style="font-size: 0.82rem; color: var(--color-gray-subtle);">Telangana, India</p>
+          </div>
+
+          <!-- Card 4: Hours -->
+          <div class="feature-box">
+            <span class="feature-icon-lg">⏰</span>
+            <h3>Opening Hours</h3>
+            <p style="font-weight: 600; color: var(--color-plum-deep); font-size: 1rem; margin-bottom: 0.25rem;">Mon – Sun: 10 AM – 8 PM</p>
+            <p style="font-size: 0.82rem; color: var(--color-gray-subtle);">Open 7 days a week</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment Booking Form Section -->
+    <section class="section-padding" style="background-color: var(--color-white); padding-top: 3.5rem;">
+      <div class="container" style="max-width: 900px;">
+        <div class="section-header">
+          <span class="section-subtitle">Online Reservation</span>
+          <h2 class="section-title">Schedule an Appointment</h2>
+          <p class="section-description">
+            Complete the details below to request your preferred service, date, and time.
+          </p>
+        </div>
+
+        <div class="form-container">
+          <form class="appointment-form" novalidate>
+            <div class="form-grid">
+              
+              <!-- Customer Name -->
+              <div class="form-group">
+                <label class="form-label" for="client-name">Customer Name <span class="required">*</span></label>
+                <input type="text" id="client-name" class="form-control" placeholder="e.g. Radhika Verma" required>
+                <span class="form-error-msg">Please enter your name.</span>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="form-group">
+                <label class="form-label" for="client-phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="client-phone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+                <span class="form-error-msg">Please enter a valid phone number.</span>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label class="form-label" for="client-email">Email Address <span class="required">*</span></label>
+                <input type="email" id="client-email" class="form-control" placeholder="e.g. radhika@example.com" required>
+                <span class="form-error-msg">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Service Selection Dropdown -->
+              <div class="form-group">
+                <label class="form-label" for="client-service">Select Service <span class="required">*</span></label>
+                <select id="client-service" class="form-control" required>
+                  <option value="">-- Choose a Service --</option>
+                  <optgroup label="Hair Care">
+                    <option value="Haircut">Haircut (₹300)</option>
+                    <option value="Hair Styling">Hair Styling (₹500)</option>
+                    <option value="Hair Wash">Hair Wash & Conditioning (₹200)</option>
+                    <option value="Hair Spa">Hair Spa (₹999)</option>
+                    <option value="Hair Smoothening">Hair Smoothening (₹3,499)</option>
+                    <option value="Hair Colouring">Hair Colouring (₹1,800)</option>
+                  </optgroup>
+                  <optgroup label="Facial & Skincare">
+                    <option value="Basic Facial">Basic Facial (₹699)</option>
+                    <option value="Fruit Facial">Fruit Facial (₹899)</option>
+                    <option value="Deep Cleansing Facial">Deep Cleansing Facial (₹1,199)</option>
+                    <option value="Cleanup">Express Cleanup (₹399)</option>
+                    <option value="Face Bleach">Face Bleach (₹350)</option>
+                  </optgroup>
+                  <optgroup label="Bridal & Makeover">
+                    <option value="Bridal Makeup">Bridal Makeup Signature (₹9,999)</option>
+                    <option value="Engagement Makeup">Engagement Makeup (₹4,999)</option>
+                    <option value="Reception Makeup">Reception Makeup (₹5,499)</option>
+                    <option value="Party Makeup">Party Makeup (₹2,499)</option>
+                    <option value="HD Makeup">HD Makeup (₹6,499)</option>
+                  </optgroup>
+                  <optgroup label="Nail & Grooming">
+                    <option value="Manicure">Manicure (₹399)</option>
+                    <option value="Pedicure">Pedicure (₹499)</option>
+                    <option value="Eyebrow Threading">Eyebrow Threading (₹50)</option>
+                    <option value="Full Arms Waxing">Full Arms Waxing (₹399)</option>
+                  </optgroup>
+                  <optgroup label="Spa & Packages">
+                    <option value="Head Massage">Head Massage (₹299)</option>
+                    <option value="Basic Beauty Package">Basic Beauty Package (₹1,199)</option>
+                    <option value="Complete Beauty Package">Complete Beauty Package (₹2,899)</option>
+                    <option value="Bridal Glow Package">Bridal Glow Package (₹14,999)</option>
+                  </optgroup>
+                </select>
+                <span class="form-error-msg">Please choose a service.</span>
+              </div>
+
+              <!-- Preferred Date Field -->
+              <div class="form-group">
+                <label class="form-label" for="client-date">Preferred Date <span class="required">*</span></label>
+                <input type="date" id="client-date" class="form-control" required>
+                <span class="form-error-msg">Please select your preferred date.</span>
+              </div>
+
+              <!-- Preferred Time Dropdown -->
+              <div class="form-group">
+                <label class="form-label" for="client-time">Preferred Time <span class="required">*</span></label>
+                <select id="client-time" class="form-control" required>
+                  <option value="">-- Choose Time Slot --</option>
+                  <option value="10:00 AM">10:00 AM – 11:00 AM</option>
+                  <option value="11:30 AM">11:30 AM – 12:30 PM</option>
+                  <option value="01:00 PM">01:00 PM – 02:00 PM</option>
+                  <option value="02:30 PM">02:30 PM – 03:30 PM</option>
+                  <option value="04:00 PM">04:00 PM – 05:00 PM</option>
+                  <option value="05:30 PM">05:30 PM – 06:30 PM</option>
+                  <option value="07:00 PM">07:00 PM – 08:00 PM</option>
+                </select>
+                <span class="form-error-msg">Please choose a time slot.</span>
+              </div>
+
+              <!-- Additional Message -->
+              <div class="form-group form-group-full">
+                <label class="form-label" for="client-notes">Additional Message / Special Notes</label>
+                <textarea id="client-notes" class="form-control" rows="3" placeholder="Please mention any allergies, styling references, or special requests..."></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-group form-group-full" style="text-align: center; margin-top: 1rem;">
+                <button type="submit" class="btn btn-primary" style="padding: 1rem 3rem;">Submit Appointment Request (Demo)</button>
+                <p class="demo-disclaimer-note" style="margin-top: 0.85rem;">
+                  * Notice: This is a frontend demonstration. Appointment requests are validated locally and are not transmitted to the parlour or any external server.
+                </p>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Address Section with Interior Ambience Placeholder -->
+    <section class="section-padding">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3.5rem; align-items: center;">
+          <div>
+            <span class="section-subtitle">Find Our Sanctuary</span>
+            <h2 class="section-title">Conveniently Located in Hyderabad</h2>
+            <p>
+              Located along Main Road, Hyderabad, <strong>BEAUTY PARLOUR</strong> offers easy access, valet parking assistance, and a peaceful environment isolated from street sounds.
+            </p>
+            <div style="background: var(--color-white); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-gray-border); margin-top: 1.5rem;">
+              <h4 style="font-size: 1.1rem; color: var(--color-plum-deep); margin-bottom: 0.5rem;">Visiting Guidelines:</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">• We encourage arriving 10 minutes prior to your scheduled time to relax with herbal tea.</p>
+              <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">• Walk-ins are warmly accommodated based on current stylist availability.</p>
+              <p style="font-size: 0.9rem;">• Dedicated, hygienic sanitization protocols observed between all guest appointments.</p>
+            </div>
+          </div>
+
+          <!-- Placeholder 8: beauty-parlour-interior -->
+          <!-- [FUTURE IMAGE REPLACEMENT]: Insert actual salon interior or map graphic <img src="assets/images/beauty-parlour-interior.jpg" alt="BEAUTY PARLOUR Location and Interior"> -->
+          <div class="placeholder-wrapper">
+            <div class="img-placeholder beauty-parlour-interior" role="img" aria-label="BEAUTY PARLOUR location and interior placeholder">
+              <span class="placeholder-badge">Placeholder: beauty-parlour-interior</span>
+              <span class="placeholder-icon">📍</span>
+              <h3 class="placeholder-title">BEAUTY PARLOUR</h3>
+              <p class="placeholder-subtext">Main Road, Hyderabad, Telangana, India • Mon-Sun 10AM-8PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="section-padding" style="background-color: var(--color-white);" aria-labelledby="contact-faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Booking Assistance</span>
+          <h2 id="contact-faq-heading" class="section-title">Frequently Asked Questions: Appointments</h2>
+          <p class="section-description">
+            Everything you need to know about scheduling your visit at BEAUTY PARLOUR.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do I need to book in advance or can I walk in?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                While walk-in guests are always warmly welcomed subject to stylist availability, booking in advance guarantees zero wait times, especially on weekends and festive evenings.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What payment methods are accepted at the parlour?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                We accept all major UPI applications (Google Pay, PhonePe, Paytm), debit and credit cards, and cash payments at the billing counter.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I reschedule or cancel my appointment?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Certainly! We appreciate a simple call or message at least 2 hours in advance so we can adjust our attendants' schedule accordingly.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Are bridal consultations conducted in person?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes, we invite prospective brides to our parlour for a complimentary in-person consultation to inspect outfit swatches, discuss lighting, and plan hair styling accessories.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-text">BEAUTY PARLOUR</span>
+          <span class="logo-subtext">Luxury Beauty & Wellness</span>
+        </a>
+        <p>
+          Dedicated to celebrating your inherent beauty through tailored hair care, restorative facial rituals, and artistic makeover experiences in a calming luxury sanctuary.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About BEAUTY PARLOUR</a></li>
+          <li><a href="services.html">All Services Menu</a></li>
+          <li><a href="packages-gallery.html">Packages & Gallery</a></li>
+          <li><a href="contact.html">Book Appointment</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="hair-care.html">Hair Care & Styling</a></li>
+          <li><a href="skin-care.html">Facial & Skincare</a></li>
+          <li><a href="bridal-makeup.html">Bridal & Party Makeup</a></li>
+          <li><a href="services.html#nail-care">Manicure & Pedicure</a></li>
+          <li><a href="services.html#spa-care">Head Massage & Spa</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Salon Hours & Address</h4>
+        <ul class="footer-contact-info">
+          <li>
+            <span class="icon">📍</span>
+            <span>Main Road, Hyderabad, Telangana, India</span>
+          </li>
+          <li>
+            <span class="icon">📞</span>
+            <span>+91 90000 00000 (Sample Demo)</span>
+          </li>
+          <li>
+            <span class="icon">✉️</span>
+            <span>demo@example.com</span>
+          </li>
+          <li>
+            <span class="icon">⏰</span>
+            <span>Monday to Sunday: 10:00 AM – 8:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; 2026 BEAUTY PARLOUR. All rights reserved. Designed for demonstration.
+        </div>
+        <div>
+          <span>Demonstration Website • Pure HTML5 / CSS3 / Vanilla JS</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top of page">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
